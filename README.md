@@ -1,2 +1,2 @@
-# Exam-Website-
+# Exam-Website
 Exam Registration Website
