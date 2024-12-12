@@ -1,3 +1,0 @@
-DROP TABLE IF EXISTS users;
-
-ADD TABLE users;
