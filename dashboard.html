@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<body style="color:rgb(0, 0, 0)">Select the subject of the exam, the campus you'd 
+    like to attend, as well as the date and time you would like to take it. 
+Once completed, click Submit. </body><br><br>
+
+<label style="color:blue">Select an Exam:</label>
+<select name="exams" id="exams">
+  <option value="--">--</option>
+  <option value="ENG102">ENG102</option>
+  <option value="PHYS100">PHYS100</option>
+  <option value="CIT260">CIT260</option>
+  <option value="CALC2">CALC2</option>
+</select>
+
+<body>
+   
+    <h3 style="color:blue">pick a campus for the exam:</h3>
+    <label>
+        <input type="radio" name="option" 
+               value="option1"> North Las Vegas 
+    </label>
+
+    <label>
+        <input type="radio" name="option" 
+               value="option2"> West Charleston
+    </label>
+
+    <label>
+        <input type="radio" name="option" 
+               value="option3"> Henderson
+    </label>
+</body>
+
+<html>
+
+<head>
+    <style>
+        body {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 style="color:blue">pick a date and time for the exam:</h3>
+    <h4>Date and Time:
+        <input type="datetime-local" 
+               id="Test_DatetimeLocal">
+    </h4>
+</body>
+
+<!-- button to submit reservation -->
+<button type="Submit"><nav><a href="confirmation.html">Submit</a></nav></button>
+
+<!-- button to access the students account -->
+<button type="Account"><nav><a href="Account.html">Student Account</a></nav></button>
+
+</html>

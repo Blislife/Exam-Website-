@@ -1,6 +1,5 @@
 USE users;
 DROP TABLE IF EXISTS studenttests;
-DROP TABLE IF EXISTS auth;
 DROP TABLE IF EXISTS students;
 DROP TABLE IF EXISTS test;
 DROP TABLE IF EXISTS faculty;
@@ -53,31 +52,4 @@ CREATE TABLE studenttests(
 CREATE TABLE admi(
 	username CHAR(5),
     password1 VARCHAR(50)
-);
-
-CREATE TABLE auth (
-	studemail VARCHAR(50),
-    studpass VARCHAR(50),
-    facemail VARCHAR(50),
-    facpass VARCHAR(50),
-    adminname CHAR(5),
-    adminpass VARCHAR(50),
-    CONSTRAINT auth_fk_students
-		FOREIGN KEY (studemail)
-        REFERENCES students(email),
-	CONSTRAINT auth_fk_students
-		FOREIGN KEY (studpass)
-        REFERENCES students(password1),
-	CONSTRAINT auth_fk_faculty
-		FOREIGN KEY (facemail)
-        REFERENCES faculty(email),
-	CONSTRAINT auth_fk_faculty
-		FOREIGN KEY (facpass)
-        REFERENCES faculty(password1),
-	CONSTRAINT auth_fk_admi
-		FOREIGN KEY (adminname)
-        REFERENCES admi(username),
-	CONSTRAINT auth_fk_admi
-		FOREIGN KEY (adminpass)
-        REFERENCES admi(password1)
 );
